@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import * as data from './data.json';
+import data from './data.json';
 import { ChipList } from '@syncfusion/ej2-buttons';
 /**
  * API chips component

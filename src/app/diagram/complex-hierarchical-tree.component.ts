@@ -6,7 +6,7 @@ import {
 } from '@syncfusion/ej2-diagrams';
 import { DataManager } from '@syncfusion/ej2-data';
 import { ChangeEventArgs as NumericChangeEventArgs } from '@syncfusion/ej2-inputs';
-import * as Data from './diagram-data.json';
+import Data from './diagram-data.json';
 import { ChangeEventArgs as CheckBoxChangeEventArgs } from '@syncfusion/ej2-buttons';
 Diagram.Inject(DataBinding, ComplexHierarchicalTree,LineDistribution);
 

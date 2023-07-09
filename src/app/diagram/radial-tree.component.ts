@@ -6,7 +6,7 @@ import {
 } from '@syncfusion/ej2-diagrams';
 import { DataManager } from '@syncfusion/ej2-data';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
-import * as Data from './diagram-data.json';
+import Data from './diagram-data.json';
 
 export interface DataInfo {
     [key: string]: string;

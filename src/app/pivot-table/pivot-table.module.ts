@@ -1,7 +1,6 @@
 import { NgModule, Type, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { HttpModule } from '@angular/http';
 import { PivotViewAllModule } from '@syncfusion/ej2-angular-pivotview';
 import { PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview';
 import { ToolbarModule } from '@syncfusion/ej2-angular-navigations';
@@ -42,6 +41,7 @@ import { IntegrationComponent } from './external-binding.component';
 import { SharedModule } from '../common/shared.module';
 import { CheckBoxAllModule, RadioButtonAllModule, ButtonAllModule } from '@syncfusion/ej2-angular-buttons';
 import { KeyboardNavigationComponent } from './keyboard-navigation.component';
+import { HttpClientModule } from '@angular/common/http';
 
 export const pivottableRouteConfig: Object[] = [
     { 'path': ':theme/pivot-table/overview', 'description': 'This sample shows an overview of Essential JS2 Pivot Table that allows to organize and summarize the pivot data in a detailed or abstract view and displays it as a grid and chart.', component: OverviewComponent, 'name': 'Overview', order: '01', category: 'Pivot Table' },
@@ -84,7 +84,21 @@ let declarations: Type<Object>[] = [OverviewComponent, DefaultComponent, LocalCo
     SelectionComponent,DrillDownComponent, IntegrationComponent, CellTemplateComponent, GroupingComponent, PagingComponent];
 
 @NgModule({
-    imports: [RouterModule.forChild(pivottableRouteConfig), CommonModule, HttpModule, ToolbarModule, PivotViewAllModule, PivotFieldListAllModule, SharedModule, NumericTextBoxAllModule, ButtonAllModule, CheckBoxAllModule, RadioButtonAllModule, DropDownListAllModule, MultiSelectAllModule, MaskedTextBoxAllModule],
+    imports: [
+      RouterModule.forChild(pivottableRouteConfig),
+      CommonModule,
+      HttpClientModule,
+      ToolbarModule,
+      PivotViewAllModule,
+      PivotFieldListAllModule,
+      SharedModule,
+      NumericTextBoxAllModule,
+      ButtonAllModule,
+      CheckBoxAllModule,
+      RadioButtonAllModule,
+      DropDownListAllModule,
+      MultiSelectAllModule,
+      MaskedTextBoxAllModule],
     declarations: declarations,
     providers: [PivotViewAllModule, PivotFieldListAllModule],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]

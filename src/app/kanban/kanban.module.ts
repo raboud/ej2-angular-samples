@@ -1,7 +1,6 @@
 import { NgModule, Type, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { HttpModule } from '@angular/http';
 import { KanbanAllModule } from '@syncfusion/ej2-angular-kanban';
 import { CheckBoxAllModule } from '@syncfusion/ej2-angular-buttons';
 import { DatePickerModule } from '@syncfusion/ej2-angular-calendars';
@@ -31,9 +30,10 @@ import { ShowHideComponent } from './show-hide.component';
 import { WIPValidationComponent } from './wip-validation.component';
 import { EventsComponent } from './events.component';
 import { APIComponent } from './api.component';
-import { VirtualScrollingComponent } from './virtual-scrolling.component';
+//import { VirtualScrollingComponent } from './virtual-scrolling.component';
 
 import { SharedModule } from '../common/shared.module';
+import { HttpClientModule } from '@angular/common/http';
 
 export const kanbanRouteConfig: Object[] = [
   { 'path': ':theme/kanban/overview', component: OverviewComponent, name: 'Overview', order: '01', category: 'Kanban', description: 'The example is designed to enable most essential features such as templating, swimlane, toggling columns, tooltip, and more in JS Kanban board.' },
@@ -44,7 +44,7 @@ export const kanbanRouteConfig: Object[] = [
   { 'path': ':theme/kanban/dialog-editing', component: DialogEditingComponent, name: 'Dialog Editing', order: '01', category: 'Kanban', description: 'The example explains how to handle the CRUD (Create, Read, Update, and Delete) actions on the JS Kanban cards from the application end.' },
   { 'path': ':theme/kanban/search-filter', component: SearchFilterComponent, name: 'Search and Filter Cards', order: '01', category: 'Kanban', description: 'The example demo shows how to filter the cards and make searching when more number of cards on a JavaScript Kanban board that helps you to focus.' },
   { 'path': ':theme/kanban/sorting', component: SortingComponent, name: 'Sorting Cards', order: '01', category: 'Kanban', description: 'The example demonstrates how to sort the cards in the ascending or descending based on the data source order or indexing or custom field on the Kanban board.' },
-  { 'path': ':theme/kanban/virtual-scrolling', component: VirtualScrollingComponent, name: 'Virtual Scrolling', order: '01', category: 'Kanban', type: 'new' , description: 'The example demonstrates how to load a large number of cards in the Kanban board with optimal load time using the virtual scrolling feature.' },
+//  { 'path': ':theme/kanban/virtual-scrolling', component: VirtualScrollingComponent, name: 'Virtual Scrolling', order: '01', category: 'Kanban', type: 'new' , description: 'The example demonstrates how to load a large number of cards in the Kanban board with optimal load time using the virtual scrolling feature.' },
   { 'path': ':theme/kanban/local-data', component: LocalDataComponent, name: 'Local Data', order: '02', category: 'Data Binding', description: 'The example demonstrates how to bind data to the JavaScript Kanban board from the array of JavaScript objects (JSON) or instances of Data Manager.' },
   { 'path': ':theme/kanban/remote-data', component: RemoteDataComponent, name: 'Remote Data', order: '02', category: 'Data Binding', description: 'The example demonstrates how to load data source from remote seervice to the JavaScript Kanban board using data manager.' },
   { 'path': ':theme/kanban/header-template', component: HeaderTemplateComponent, name: 'Header Template', order: '03', category: 'Templates', description: 'The example demonstrates how to customize the column headers of the JS Kanban board with text, images, badges, and count using HTML templates.' },
@@ -67,7 +67,7 @@ const declarations: Type<Object>[] = [
   DialogEditingComponent,
   SearchFilterComponent,
   SortingComponent,
-  VirtualScrollingComponent,
+//  VirtualScrollingComponent,
   LocalDataComponent,
   RemoteDataComponent,
   HeaderTemplateComponent,
@@ -82,7 +82,7 @@ const declarations: Type<Object>[] = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(kanbanRouteConfig), CommonModule, HttpModule, KanbanAllModule, DialogModule,
+  imports: [RouterModule.forChild(kanbanRouteConfig), CommonModule, HttpClientModule, KanbanAllModule, DialogModule,
     CheckBoxAllModule,DatePickerModule,DropDownListAllModule, NumericTextBoxAllModule, TextBoxAllModule, ReactiveFormsModule, FormsModule, SharedModule],
   declarations: declarations,
   providers: [KanbanAllModule],

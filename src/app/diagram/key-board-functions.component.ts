@@ -10,7 +10,7 @@ import {
 } from '@syncfusion/ej2-diagrams';
 import { SnapConstraints } from '@syncfusion/ej2-diagrams';
 import { DataManager } from '@syncfusion/ej2-data';
-import * as Data from './diagram-data.json';
+import Data from './diagram-data.json';
 Diagram.Inject(UndoRedo, DiagramContextMenu, HierarchicalTree, DataBinding);
 
 export interface DataInfo {

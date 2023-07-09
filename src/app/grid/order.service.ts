@@ -1,5 +1,5 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
 import { DataStateChangeEventArgs, Sorts, DataResult } from '@syncfusion/ej2-angular-grids'
 import { Observable } from 'rxjs';
 import { Subject } from 'rxjs';
@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
 export class OrdersService extends Subject<DataStateChangeEventArgs> {
     private BASE_URL = 'https://services.odata.org/V4/Northwind/Northwind.svc/Orders';
 
-    constructor(private http: Http) {
+    constructor(private http: HttpClient) {
         super();
     }
 
@@ -27,8 +27,8 @@ export class OrdersService extends Subject<DataStateChangeEventArgs> {
             }).reverse().join(',');
         }
 
-        return this.http 
-           .get(`${this.BASE_URL}?${pageQuery}${sortQuery}&$count=true`) 
+        return this.http
+           .get(`${this.BASE_URL}?${pageQuery}${sortQuery}&$count=true`)
            .pipe(map((response: any) => response.json()))
            .pipe(map((response: any) => (<DataResult>{
                 result: response['value'],

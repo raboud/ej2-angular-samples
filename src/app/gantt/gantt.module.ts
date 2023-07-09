@@ -1,5 +1,5 @@
 import { NgModule, ModuleWithProviders, Type } from '@angular/core';
-import { CommonModule } from '@angular/common';  
+import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../common/shared.module';
 import { GanttAllModule } from '@syncfusion/ej2-angular-gantt';
@@ -50,14 +50,14 @@ import { GanttVirtualScrollComponent } from './virtual-scroll.component';
 import { GanttTimezoneComponent } from './timezone.component';
 import { GanttCriticalPathComponent } from './critical-path.component'
 import { GanttLoadingAnimationComponent } from './loading-animation.component';
-import { GanttOverviewComponent } from './overview.component';
+//import { GanttOverviewComponent } from './overview.component';
 
 export const GanttAppRoutes: Object[] = [
-    {
-        path: ':theme/gantt/overview', component: GanttOverviewComponent,
-        description: 'This example demonstrates the simple Gantt chart with summary task, child tasks, milestone tasks, dependencies with event markers of project',
-        name: 'Overview', order: '01', category: 'Gantt', type: "new"
-    },
+//    {
+//        path: ':theme/gantt/overview', component: GanttOverviewComponent,
+//        description: 'This example demonstrates the simple Gantt chart with summary task, child tasks, milestone tasks, dependencies with event markers of project',
+//        name: 'Overview', order: '01', category: 'Gantt', type: "new"
+//    },
     {
         path: ':theme/gantt/default', component: GanttDefaultComponent,
         description: 'This example demonstrates the simple Gantt chart with summary task, child tasks, milestone tasks, dependencies with event markers of project',
@@ -321,7 +321,7 @@ let declarations: Type<Object>[] = [
     GanttVirtualScrollComponent,
     GanttTimezoneComponent,
     GanttCriticalPathComponent,
-    GanttOverviewComponent
+//    GanttOverviewComponent
 ];
 @NgModule({
     imports: [CommonModule, GanttRouter, SharedModule, GanttAllModule, DropDownListAllModule, CheckBoxAllModule, SwitchAllModule, TextBoxAllModule, NumericTextBoxAllModule, MultiSelectAllModule],

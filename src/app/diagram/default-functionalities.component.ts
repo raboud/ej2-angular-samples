@@ -604,7 +604,7 @@ public printDiagram(args){
   public download(data : string) : void{
     if ((window.navigator as any).msSaveBlob) {
       let blob: Blob = new Blob([data], { type: 'data:text/json;charset=utf-8,' });
-      window.navigator.msSaveOrOpenBlob(blob, 'Diagram.json');
+      (window.navigator as any).msSaveOrOpenBlob(blob, 'Diagram.json');
   } else {
       let dataStr: string = 'data:text/json;charset=utf-8,' + encodeURIComponent(data);
       let a: HTMLAnchorElement = document.createElement('a');

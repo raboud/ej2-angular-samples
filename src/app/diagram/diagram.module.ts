@@ -64,15 +64,15 @@ import { EventsDiagramComponent } from './diagram-events.component';
 import { TooltipDiagramComponent } from './tooltip.component';
 import { LineRoutingComponent } from './line-routing.component';
 import { VirtualizationComponent } from './virtualization';
-import { GroupingAndOrderingComponent } from './grouping-and-ordering.component';
-import { CommandComponent } from './commands.component';
-import { ConstraintComponent } from './constraints.component';
-import { UmlSequenceComponent } from './uml-sequence-diagram.component';
-import { HierarchicalLayoutWithMultipleRootComponent } from './hierarchicallayout-with-multipleroots.component';
-import { ZoomingAndPanning } from './zooming-and-panning.component';
-import { SnappingComponent } from './snapping.component';
-import { ScrollingComponent } from './scrolling.component';
-import { DataBindingWithTreeviewComponent } from './data-binding-with-treeview.component';
+//import { GroupingAndOrderingComponent } from './grouping-and-ordering.component';
+//import { CommandComponent } from './commands.component';
+//import { ConstraintComponent } from './constraints.component';
+//import { UmlSequenceComponent } from './uml-sequence-diagram.component';
+//import { HierarchicalLayoutWithMultipleRootComponent } from './hierarchicallayout-with-multipleroots.component';
+//import { ZoomingAndPanning } from './zooming-and-panning.component';
+//import { SnappingComponent } from './snapping.component';
+//import { ScrollingComponent } from './scrolling.component';
+//import { DataBindingWithTreeviewComponent } from './data-binding-with-treeview.component';
 
 export const diagramAppRoutes: Object[] = [
     {
@@ -132,12 +132,12 @@ export const diagramAppRoutes: Object[] = [
         name: 'Swimlane', category: 'Getting Started', order: '01',
         description: 'This sample visualizes the swimlane structure with diagram elements inside it.'
     },
-    {
-        path: ':theme/diagram/groupingandordering', component: GroupingAndOrderingComponent,
-        name: 'Grouping and Ordering', category: 'Getting Started', order: '01',
-        description: 'This sample illustrates how to group, ungroup, and order commands with the diagram.',
-        type: 'new'
-    },
+//    {
+//        path: ':theme/diagram/groupingandordering', component: GroupingAndOrderingComponent,
+//        name: 'Grouping and Ordering', category: 'Getting Started', order: '01',
+//        description: 'This sample illustrates how to group, ungroup, and order commands with the diagram.',
+//        type: 'new'
+//    },
     {
         path: ':theme/diagram/diagram-events', component: EventsDiagramComponent,
         name: 'Events', category: 'Getting Started', order: '01',
@@ -148,19 +148,18 @@ export const diagramAppRoutes: Object[] = [
         name: 'History Manager', category: 'Getting Started', order: '01',
         description: 'This sample visualizes the hotel booking reservation system and its built with readymade BPMN shapes.'
     },
-    {
-        path: ':theme/diagram/commands', component: CommandComponent,
-        name: 'Commands', category: 'Getting Started', order: '01',
-        description: 'This example illustrates the various commands supported in the diagram control.',
-        type: 'new'
-    },
-    {
-        path: ':theme/diagram/constraints', component: ConstraintComponent,
-        name: 'Constraints', category: 'Getting Started', order: '01',
-        description: 'This sample illustrates how node constraints are used to restrict end-users from performing certain operations on nodes and connector constraints are used to restrict end-users from performing certain operation on connectors.',
-        type: 'new'
-
-    },
+//    {
+//        path: ':theme/diagram/commands', component: CommandComponent,
+//        name: 'Commands', category: 'Getting Started', order: '01',
+//        description: 'This example illustrates the various commands supported in the diagram control.',
+//        type: 'new'
+//    },
+//    {
+//        path: ':theme/diagram/constraints', component: ConstraintComponent,
+//        name: 'Constraints', category: 'Getting Started', order: '01',
+//        description: 'This sample illustrates how node constraints are used to restrict end-users from performing certain operations on nodes and connector constraints are used to restrict end-users from performing certain operation on connectors.',
+//        type: 'new'
+//    },
     {
         path: ':theme/diagram/tooltip', component: TooltipDiagramComponent,
         name: 'Tooltip', category: 'Getting Started', order: '01',
@@ -173,28 +172,27 @@ export const diagramAppRoutes: Object[] = [
         description: 'This example illustrates predefining shapes in a palette that can be easily ' +
             'dragged and dropped into the drawing area. Customizable options of the symbol palette are also illustrated in this example.'
     },
-
-    {
-        path: ':theme/diagram/zomming-and-panning', component: ZoomingAndPanning,
-        name: 'Zooming and Panning',
-        category: 'Interactive Features', order: '02',
-        description: 'This sample shows how diagram objects snap to the nearest intersection of gridlines or objects while being dragged or resized.',
-        type: 'new'
-    },
-    {
-        path: ':theme/diagram/snapping', component: SnappingComponent,
-        name: 'Snapping',
-        category: 'Interactive Features', order: '02',
-        description: 'This sample illustrates how to zoom and pan in the diagram.',
-        type: 'new'
-    },
-    {
-        path: ':theme/diagram/scrolling', component: ScrollingComponent,
-        name: 'Scrolling',
-        category: 'Interactive Features', order: '02',
-        description: 'This example illustrates how to scroll a diagram using vertical and horizontal scrollbars. The scroll limit property helps limit the scrolling area.',
-        type: 'new'
-    },
+//    {
+//        path: ':theme/diagram/zomming-and-panning', component: ZoomingAndPanning,
+//        name: 'Zooming and Panning',
+//        category: 'Interactive Features', order: '02',
+//        description: 'This sample shows how diagram objects snap to the nearest intersection of gridlines or objects while being dragged or resized.',
+//        type: 'new'
+//    },
+//    {
+//        path: ':theme/diagram/snapping', component: SnappingComponent,
+//        name: 'Snapping',
+//        category: 'Interactive Features', order: '02',
+//        description: 'This sample illustrates how to zoom and pan in the diagram.',
+//        type: 'new'
+//    },
+//    {
+//        path: ':theme/diagram/scrolling', component: ScrollingComponent,
+//        name: 'Scrolling',
+//        category: 'Interactive Features', order: '02',
+//        description: 'This example illustrates how to scroll a diagram using vertical and horizontal scrollbars. The scroll limit property helps limit the scrolling area.',
+//        type: 'new'
+//    },
     {
         path: ':theme/diagram/drawing-tool', component: DrawingToolDiagramComponent,
         name: 'Drawing Tools',
@@ -261,7 +259,7 @@ export const diagramAppRoutes: Object[] = [
         description: 'This sample demonstrates a huge organizational structure using a compact ' +
             'layout model. Radial tree layout algorithm is used to build such a layout.'
     },
-   
+
     {
         path: ':theme/diagram/symmetric-layout', component: SymmetricLayoutDiagramComponent,
         name: 'Symmetric Layout',
@@ -281,13 +279,13 @@ export const diagramAppRoutes: Object[] = [
         description: 'This sample visualizes a project development process using Program Evaluation Review Technique (PERT). ' +
             'Complex hierarchical tree layout algorithm is used to automatically arrange the nodes.'
     },
-    {
-        path: ':theme/diagram/hierarchicallayout-with-multipleroots', component: HierarchicalLayoutWithMultipleRootComponent,
-        name: 'Hierarchical Layout with multiple roots',
-        category: 'Automatic Layouts', order: '03',
-        description: 'This sample illustrates the structure of an Electricity Sector using complex hierarchical layout with multiple roots.',
-        type: 'new'
-    },
+//    {
+//        path: ':theme/diagram/hierarchicallayout-with-multipleroots', component: HierarchicalLayoutWithMultipleRootComponent,
+//        name: 'Hierarchical Layout with multiple roots',
+//        category: 'Automatic Layouts', order: '03',
+//        description: 'This sample illustrates the structure of an Electricity Sector using complex hierarchical layout with multiple roots.',
+//        type: 'new'
+//    },
     {
         path: ':theme/diagram/local-data', component: LocalDataDiagramComponent,
         name: 'Local Data',
@@ -344,23 +342,23 @@ export const diagramAppRoutes: Object[] = [
         description: 'This sample visually represents the hotel booking reservation system.'
             + 'It is built with readymade BPMN shapes.',
     },
-    {
-        path: ':theme/diagram/uml-sequence-diagram', component: UmlSequenceComponent,
-        name: 'UML Sequence Diagram', category: 'Use Case Diagram', order: '08',
-        description: 'This sample illustrates an employees leave request sequence using a UML sequence diagram. The shapes for the sequence were designed with the port feature for Diagrams nodes.',
-        type: 'new'
-    },
-    {
-        path: ':theme/diagram/uml-Class-diagram', component: UmlClassDiagramComponent,
-        name: 'UML Class Diagram', category: 'Use Case Diagram', order: '08',
-        description: 'This sample visualizes the class shapes in diagram.'
-    },
-    {
-        path: ':theme/diagram/venn-diagram', component: VennDiagramComponent,
-        name: 'Venn Diagram',
-        category: 'Real-time Diagrams', order: '09',
-        description: 'This sample visually represents the hotel booking reservation system. It is built with readymade BPMN shapes.',
-    },
+//    {
+//        path: ':theme/diagram/uml-sequence-diagram', component: UmlSequenceComponent,
+//        name: 'UML Sequence Diagram', category: 'Use Case Diagram', order: '08',
+//        description: 'This sample illustrates an employees leave request sequence using a UML sequence diagram. The shapes for the sequence were designed with the port feature for Diagrams nodes.',
+//        type: 'new'
+//    },
+//    {
+//        path: ':theme/diagram/uml-Class-diagram', component: UmlClassDiagramComponent,
+//        name: 'UML Class Diagram', category: 'Use Case Diagram', order: '08',
+//        description: 'This sample visualizes the class shapes in diagram.'
+//    },
+//    {
+//        path: ':theme/diagram/venn-diagram', component: VennDiagramComponent,
+//        name: 'Venn Diagram',
+//        category: 'Real-time Diagrams', order: '09',
+//        description: 'This sample visually represents the hotel booking reservation system. It is built with readymade BPMN shapes.',
+//    },
     {
         path: ':theme/diagram/network-diagram', component: NetworkShapesDiagramComponent,
         name: 'Network Diagram', category: 'Use Case Diagram', order: '09',
@@ -373,34 +371,34 @@ export const diagramAppRoutes: Object[] = [
             'annotations are used to define fishbone diagrams. Read-only mode is enabled here.',
         category: 'Real-time Diagrams', order: '09'
     },
-    {
-        path: ':theme/diagram/data-binding-with-treeview', component: DataBindingWithTreeviewComponent,
-        name: 'Data Binding with TreeView',
-        description: 'This example illustrates how to create a tree view and a diagram with a datasource. It provides support for selecting, adding, deleting, dragging and dropping, and editing annotations of the nodes during runtime. These actions will be reflected in the corresponding nodes of the tree view component.',
-        category: 'Real-time Diagrams', order: '09', type: 'new'
-    },
+//    {
+//        path: ':theme/diagram/data-binding-with-treeview', component: DataBindingWithTreeviewComponent,
+//        name: 'Data Binding with TreeView',
+//        description: 'This example illustrates how to create a tree view and a diagram with a datasource. It provides support for selecting, adding, deleting, dragging and dropping, and editing annotations of the nodes during runtime. These actions will be reflected in the corresponding nodes of the tree view component.',
+//        category: 'Real-time Diagrams', order: '09', type: 'new'
+//    },
     {
         path: ':theme/diagram/flow-execution', component: FlowExecutionDiagramComponent,
         name: 'Flow Execution', category: 'Real-time Diagrams', order: '09',
         description: 'This sample visualizes the hotel booking reservation system and its built with readymade BPMN shapes.'
     },
-    
-   
-   
-   
-   
-    
-   
-   
-   
 
-    
-    
-    
-    
-   
-    
-   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ];
 
 export const diagramRouter: ModuleWithProviders<any> = RouterModule.forChild(diagramAppRoutes);
@@ -414,8 +412,9 @@ let declarations: Type<Object>[] = [FlowDiagramComponent, ShapesDiagramComponent
     LocalDataDiagramComponent, RemoteDataDiagramComponent, VennDiagramComponent, RTLTreeDiagramComponent,
     PertChartDiagramComponent, BPMNShapesDiagramComponent, FishboneDiagramComponent, LogicCircuitComponent,
     UmlActivityComponent, NetworkShapesDiagramComponent, CRUDDiagramComponent, UmlClassDiagramComponent, SwimLaneDiagramComponent,
-    TooltipDiagramComponent, EventsDiagramComponent, LineRoutingComponent, DataBindingWithTreeviewComponent, ScrollingComponent, SnappingComponent, ZoomingAndPanning,
-    HierarchicalLayoutWithMultipleRootComponent,CommandComponent,ConstraintComponent, UmlSequenceComponent, GroupingAndOrderingComponent
+    TooltipDiagramComponent, EventsDiagramComponent, LineRoutingComponent,
+//    DataBindingWithTreeviewComponent, ScrollingComponent, SnappingComponent, ZoomingAndPanning,
+//    HierarchicalLayoutWithMultipleRootComponent,CommandComponent,ConstraintComponent, UmlSequenceComponent, GroupingAndOrderingComponent
 
 ];
 @NgModule({

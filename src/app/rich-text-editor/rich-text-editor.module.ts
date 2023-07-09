@@ -39,7 +39,7 @@ import { TabModule } from '@syncfusion/ej2-angular-navigations';
 import { AutoSaveComponent } from './auto-save.component';
 import { SwitchModule } from '@syncfusion/ej2-angular-buttons';
 import { OnlineHtmlEditorComponent } from './online-html-editor.component';
-import { ImageEditorIntegrationComponent } from './image-editor-integration.component';
+//import { ImageEditorIntegrationComponent } from './image-editor-integration.component';
 import {InsertMediaComponent} from './insert-media.component';
 import {MentionIntegrationComponent} from './mention-integration.component';
 import { MentionFormatIntegrationComponent } from './smart-suggestion.component';
@@ -65,7 +65,7 @@ export const rteAppRoutes: Object[] = [
     { path: ':theme/rich-text-editor/file-browser', component: FileBrowserComponent, name: 'File Browser', description: 'This demo shows how to insert the image into the Rich Text Editor content using FileManager.', order: '01', category: 'Rich Text Editor' },
     { path: ':theme/rich-text-editor/insert-emoticons', component: InsertEmoticonsComponent, name: 'Insert Emoticons', description: 'This demo demonstrates how to insert emoticons into the rich content in angular WYSIWYG HTML Editor using a custom tool in the editor toolbar.', order: '01', category: 'Rich Text Editor', type: 'update' },
     { path: ':theme/rich-text-editor/online-html-editor', component: OnlineHtmlEditorComponent, name: 'Online Html Editor', description: 'The online HTML editor is a demo that provides LIVE experience for both content and HTML editing with Rich Text Editor features in a real-world scenario.', order: '01', category: 'Rich Text Editor' },
-    { path: ':theme/rich-text-editor/image-editor-integration', component: ImageEditorIntegrationComponent, name: 'Image Editor Integration', description: 'This example shows how to integrate Image Editor into Rich Text Editor component, the edited image will be inserted into the Rich Text Editor.', order: '01', category: 'Rich Text Editor', type: 'New' },
+//    { path: ':theme/rich-text-editor/image-editor-integration', component: ImageEditorIntegrationComponent, name: 'Image Editor Integration', description: 'This example shows how to integrate Image Editor into Rich Text Editor component, the edited image will be inserted into the Rich Text Editor.', order: '01', category: 'Rich Text Editor', type: 'New' },
     { path: ':theme/rich-text-editor/mention-integration', component: MentionIntegrationComponent, name: '@ Mention', description: 'This example shows how to integrate @mention component within Rich Text Editor component. Type `@` character and select a user from the suggestion list.', order: '02', category: 'Mention Integration' },
     { path: ':theme/rich-text-editor/smart-suggestion', component: MentionFormatIntegrationComponent, name: 'Smart Suggestion', description: 'This example demonstrates how to implement custom text formatting within the Rich Text Editor using the @mention component.', order: '02', category: 'Mention Integration'},
     { path: ':theme/rich-text-editor/types', component: ToolbarTypeComponent, name: 'Type', description: 'This demo demonstrates different types and behaviors of a toolbar used in the angular HTML Editor such as expand/collapse, multirow, and floating.', order: '03', category: 'Toolbar' },
@@ -111,7 +111,7 @@ export const RTERouter: ModuleWithProviders<any> = RouterModule.forChild(rteAppR
         InsertEmoticonsComponent,
         AutoSaveComponent,
         OnlineHtmlEditorComponent,
-        ImageEditorIntegrationComponent,
+//        ImageEditorIntegrationComponent,
         MentionIntegrationComponent,
         MentionFormatIntegrationComponent
     ],

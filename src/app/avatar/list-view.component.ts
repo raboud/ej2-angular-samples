@@ -3,7 +3,7 @@
  */
 
 import { Component, Inject, ViewEncapsulation } from '@angular/core';
-import * as dataSource from './dataSource.json';
+import dataSource from './dataSource.json';
 
 @Component({
     selector: 'control-content',

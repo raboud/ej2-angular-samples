@@ -6,7 +6,6 @@ import {
 } from '@syncfusion/ej2-base';
 import { Button } from '@syncfusion/ej2-buttons';
 import { DropDownList, AutoComplete } from '@syncfusion/ej2-dropdowns';
-import { Http, Response } from '@angular/http';
 import { HttpClient } from '@angular/common/http';
 import { Browser, addClass, enableRipple, detach, Animation, AnimationOptions } from '@syncfusion/ej2-base';
 import { Popup, Tooltip } from '@syncfusion/ej2-popups';
@@ -31,7 +30,7 @@ loadCldr(
     de, ar, frch, en, zh
 );
 
-registerLicense('{SyncfusionJSLicensekey}');
+registerLicense('Ngo9BigBOggjHTQxAR8/V1NGaF5cXmRCf1FpRmJGdld5fUVHYVZUTXxaS00DNHVRdkdgWXhednVcQ2VYWER1XUA=');
 
 interface DestroyMethod extends HTMLElement {
     destroy: Function;
@@ -129,7 +128,7 @@ export class SBController {
         private ngEle: ElementRef,
         @Inject('sourceFiles') private sourceFiles: any,
         private router: Router,
-        private activatedRoute: ActivatedRoute, private http: Http) {
+        private activatedRoute: ActivatedRoute, private http: HttpClient) {
         for (let routes of this.router.config) {
             if ((!Browser.isDevice || !(<any>routes).hideOnDevice) && routes.path.indexOf('/') !== -1) {
                 this.pathRoutes.push(routes.path);

@@ -5,7 +5,7 @@ import { SplitButton, ItemModel, MenuEventArgs, DropDownButton } from '@syncfusi
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { Button, ChangeEventArgs, CheckBox } from '@syncfusion/ej2-buttons';
 import { ColorPicker, ColorPickerEventArgs, NumericTextBox, PaletteTileEventArgs, Signature, SignatureFileType } from '@syncfusion/ej2-inputs';
-import { debugOutputAstAsTypeScript } from '@angular/compiler';
+
 import { DropDownList } from '@syncfusion/ej2-angular-dropdowns';
 
 /**

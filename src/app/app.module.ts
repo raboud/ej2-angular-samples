@@ -4,7 +4,6 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { SBRoutingModule } from './common/sb.router';
 import { SharedModule } from './common/shared.module';
 import { HttpClientModule } from '@angular/common/http';
-import { HttpModule, JsonpModule } from '@angular/http';
 import { SBController } from './common/sb.component';
 import { LPController } from './common/lp.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -15,8 +14,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
         BrowserModule,
         SBRoutingModule,
         HttpClientModule,
-        HttpModule,
-        JsonpModule,
         SharedModule,
         FormsModule,
         ReactiveFormsModule

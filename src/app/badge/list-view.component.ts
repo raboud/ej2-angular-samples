@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, Inject, ViewChild } from '@angular/core';
-import * as dataSource from './dataSource.json';
+import dataSource from './dataSource.json';
 /**
  *  Sample for CSS Basic Layout Badge
  */

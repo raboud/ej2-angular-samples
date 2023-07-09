@@ -8,7 +8,7 @@ import {
 } from '@syncfusion/ej2-angular-diagrams';
 
 import { DataManager } from '@syncfusion/ej2-data';
-import * as Data from './diagram-data.json';
+import Data from './diagram-data.json';
 Diagram.Inject(DataBinding, MindMap, HierarchicalTree);
 
 /**

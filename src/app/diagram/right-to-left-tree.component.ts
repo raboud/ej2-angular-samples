@@ -4,7 +4,7 @@ import {
     Diagram, NodeModel, ConnectorModel, PointPortModel, DiagramTools,
     DataBinding, HierarchicalTree, SnapConstraints, SnapSettingsModel, ShapeAnnotationModel
 } from '@syncfusion/ej2-angular-diagrams';
-import * as Data from './diagram-data.json';
+import Data from './diagram-data.json';
 
 export interface DataInfo {
     [key: string]: string;
